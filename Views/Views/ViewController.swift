@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
         redView.backgroundColor = .orange
         
-        redView.alpha = 0.5
+        redView.alpha = 1.0
         blackView.alpha = 0.8
         
         /*
@@ -53,10 +53,29 @@ class ViewController: UIViewController {
         
         // use member methods to affine to do more than one transformation
         //purpleView.transform = rotation
-        purpleView.transform = scaling.rotated(by: CGFloat(M_PI_2 / 2))
+        purpleView.transform = scaling.rotated(by: CGFloat(M_PI_2 / 2)).translatedBy(x: 150, y: 70)
         greenView.transform = translation
         
-        redView.layer
+        // CALayers
+        redView.layer.borderWidth = 1.0
+        greenView.layer.borderWidth = 3.0
+        blackView.layer.cornerRadius = 5.0
+        blackView.layer.borderWidth = 1.5
+        blackView.layer.borderColor = UIColor.white.cgColor
+        
+        purpleView.layer.cornerRadius = purpleView.bounds.width / 2.0
+        purpleView.layer.borderWidth = 2.0
+
+        purpleView.layer.borderColor = UIColor(red: 230.0 / 256, green: 90.0 / 256, blue: 178.0 / 256, alpha: 1.0).cgColor
+        
+        // shadows
+        redView.layer.shadowOpacity = 1.0
+        print("red shadow offset: \(redView.layer.shadowOffset)")
+        redView.layer.shadowOffset = CGSize(width: -5.0, height: -10.0)
+        redView.layer.shadowRadius = 8.0
+        redView.layer.shadowColor = UIColor.blue.cgColor
+        
+        // TODO: - add animations
         
         // bounds example:
         /**
@@ -66,11 +85,6 @@ class ViewController: UIViewController {
          *******
          * let backgroundImage = BackgroundImage(frame: view.bounds)
         **/
-
-        //print(purpleView.frame)
-        //print(view.superview)
-        //print(purpleView.superview as Any)
-        //print(view.subviews)
         
     }
 
