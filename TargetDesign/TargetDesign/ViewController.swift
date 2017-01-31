@@ -9,17 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var baseView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        baseView.layer.borderWidth = 1
+        
+        baseView.layer.cornerRadius = baseView.bounds.width / 2
+        // current values for baseView
+        print ("baseView:\n bounds: \(baseView.bounds)\n layer: \(baseView.layer)")
+        
+        let centerLayer = CALayer()
+        centerLayer.frame = baseView.bounds.insetBy(dx: 10, dy: 10) //CGRect(x: baseView.center.x, y: baseView.center.y, width: baseView.bounds.width / 3, height: baseView.bounds.width / 3)
+        
+        centerLayer.backgroundColor = UIColor.red.cgColor
+        centerLayer.cornerRadius = centerLayer.bounds.width / 2
+        
+        baseView.layer.addSublayer(centerLayer)
+        print ("centerLayer:\n contentsRect: \(centerLayer.contentsRect)")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
