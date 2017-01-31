@@ -27,10 +27,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.4692382812" green="0.99205186629999997" blue="0.01038953993" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="9xf-uf-HvX" customClass="BorderedCustomView" customModule="Views" customModuleProvider="target">
+                                <rect key="frame" x="67" y="40" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.4692382812" green="0.99205186629999997" blue="0.01038953993" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="borderView" destination="9xf-uf-HvX" id="hr3-w6-3qu"/>
                         <outlet property="greenView" destination="EG4-UU-jbo" id="evy-Kh-yAx"/>
                         <outlet property="redView" destination="na1-K6-gTv" id="O0Z-bt-Wvq"/>
                     </connections>

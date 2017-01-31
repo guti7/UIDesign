@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet var redView: UIView!
     @IBOutlet weak var greenView: UIView!
+    @IBOutlet weak var borderView: BorderedCustomView!
     
     // MARK: - App lifecyle
 
@@ -25,6 +26,9 @@ class ViewController: UIViewController {
         purpleView.backgroundColor = UIColor.purple
         
         view.addSubview(purpleView)
+        
+        // move border view to top
+        borderView.bringSubview(toFront: greenView)
         
         // add a subview to purpleView
         let frame2 = CGRect(x: 10, y: 10, width: 30, height: 30)
