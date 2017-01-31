@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet var redView: UIView!
     @IBOutlet weak var greenView: UIView!
     
-    
     // MARK: - App lifecyle
 
     override func viewDidLoad() {
@@ -70,21 +69,36 @@ class ViewController: UIViewController {
         
         // shadows
         redView.layer.shadowOpacity = 1.0
-        //print("red shadow offset: \(redView.layer.shadowOffset)")
-        redView.layer.shadowOffset = CGSize(width: -5.0, height: -10.0)
-        redView.layer.shadowRadius = 8.0
-        redView.layer.shadowColor = UIColor.blue.cgColor
+        redView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        redView.layer.shadowRadius = 20.0
+        redView.layer.shadowColor = UIColor(red: 0.5, green: 0.5, blue: 188.0/255.0, alpha: 1.0).cgColor
         
         
-        // TODO: - add animations
+        // Add animations
         
         let colorBlue = UIColor(red: 41.0/255.0, green: 0.5, blue: 185.0/255.0, alpha: 1.0)
         
+        let transformSkew = __CGAffineTransformMake(0, 1, 0.5, 0, 1, 0)
+        
+        let transformed = CGAffineTransform(a: 1, b: 0, c: 0.5, d: 0.5, tx: 10, ty: 30)
+        
+        // blackView transform animation
+        UIView.animate(withDuration: 3, delay: 1, options: [.autoreverse, .repeat], animations: {
+            blackView.transform = transformSkew
+        }, completion: nil)
+        
+        // purpleView and redView transform animation
         UIView.animate(withDuration: 3) { 
-            self.greenView.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
-            self.view.subviews[4].backgroundColor = colorBlue
+            //self.view.subviews[2].backgroundColor = colorBlue
+            purpleView.backgroundColor = colorBlue
+            self.redView.transform = transformed
         }
         
+        // greenView transform animation
+        UIView.animate(withDuration: 3, delay: 0, options: [.autoreverse, .repeat], animations: {
+            self.greenView.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
+
+        }, completion: nil)
         
         
         // bounds example:
