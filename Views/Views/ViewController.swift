@@ -70,12 +70,22 @@ class ViewController: UIViewController {
         
         // shadows
         redView.layer.shadowOpacity = 1.0
-        print("red shadow offset: \(redView.layer.shadowOffset)")
+        //print("red shadow offset: \(redView.layer.shadowOffset)")
         redView.layer.shadowOffset = CGSize(width: -5.0, height: -10.0)
         redView.layer.shadowRadius = 8.0
         redView.layer.shadowColor = UIColor.blue.cgColor
         
+        
         // TODO: - add animations
+        
+        let colorBlue = UIColor(red: 41.0/255.0, green: 0.5, blue: 185.0/255.0, alpha: 1.0)
+        
+        UIView.animate(withDuration: 3) { 
+            self.greenView.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
+            self.view.subviews[4].backgroundColor = colorBlue
+        }
+        
+        
         
         // bounds example:
         /**
