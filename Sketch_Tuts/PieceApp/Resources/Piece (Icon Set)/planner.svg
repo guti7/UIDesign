@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="33px"
+	 viewBox="0 0 40 33" enable-background="new 0 0 40 33" xml:space="preserve">
+<title>approved window</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="approved-window" sketch:type="MSLayerGroup">
+		<path id="Shape" sketch:type="MSShapeGroup" d="M39.3,33H0.7C0.3,33,0,32.7,0,32.3V0.7C0,0.3,0.3,0,0.7,0h38.7
+			C39.7,0,40,0.3,40,0.7v31.7C40,32.7,39.7,33,39.3,33L39.3,33z M1.3,31.7h37.3V1.3H1.3V31.7L1.3,31.7z"/>
+		<path id="Shape_1_" sketch:type="MSShapeGroup" d="M38.7,7.9H1.3C1,7.9,0.7,7.6,0.7,7.3c0-0.4,0.3-0.7,0.7-0.7h37.3
+			c0.4,0,0.7,0.3,0.7,0.7C39.3,7.6,39,7.9,38.7,7.9L38.7,7.9z"/>
+		<path id="Shape_2_" sketch:type="MSShapeGroup" d="M29.8,29.1c-3.1,0-5.7-2.5-5.7-5.6c0-3.1,2.5-5.6,5.7-5.6
+			c3.1,0,5.7,2.5,5.7,5.6C35.5,26.6,32.9,29.1,29.8,29.1L29.8,29.1z M29.8,19.2c-2.4,0-4.3,1.9-4.3,4.3c0,2.4,1.9,4.3,4.3,4.3
+			c2.4,0,4.3-1.9,4.3-4.3C34.1,21.1,32.2,19.2,29.8,19.2L29.8,19.2z"/>
+		<path id="Shape_3_" sketch:type="MSShapeGroup" d="M30.3,25.6c-0.2,0-0.3-0.1-0.5-0.2L28.2,24c-0.3-0.2-0.3-0.7,0-0.9
+			c0.3-0.3,0.7-0.3,0.9,0l1.2,1.1l6.2-6c0.3-0.3,0.7-0.2,0.9,0c0.3,0.3,0.3,0.7,0,0.9l-6.7,6.5C30.7,25.6,30.5,25.6,30.3,25.6
+			L30.3,25.6z"/>
+		<path id="Shape_4_" sketch:type="MSShapeGroup" d="M5.3,4.3c0,0.5-0.4,0.8-0.8,0.8S3.7,4.7,3.7,4.3S4,3.5,4.5,3.5S5.3,3.8,5.3,4.3
+			L5.3,4.3z"/>
+		<path id="Shape_5_" sketch:type="MSShapeGroup" d="M8.7,4.3c0,0.5-0.4,0.8-0.8,0.8C7.4,5.1,7,4.7,7,4.3s0.4-0.8,0.8-0.8
+			C8.3,3.5,8.7,3.8,8.7,4.3L8.7,4.3z"/>
+		<path id="Shape_6_" sketch:type="MSShapeGroup" d="M12,4.3c0,0.5-0.4,0.8-0.8,0.8c-0.5,0-0.8-0.4-0.8-0.8s0.4-0.8,0.8-0.8
+			C11.6,3.5,12,3.8,12,4.3L12,4.3z"/>
+	</g>
+</g>
+</svg>
